@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
+
 const NavBar = () => {
+
+  const [show, setShow]= useState(false)
+  useEffect(()=>
+  {
+  window.addEventListener("scroll", ()=>
+  {
+    if(window.scrollY>100)
+    {
+      setShow(true)
+    }
+    else{
+      setShow(false)
+    }
+  })
+  },[])
+
+
   return (
-    <div className='navbar'>
+    <div className={`navbar ${show && 'nav_black'}`}>
 
       <img className='nav_logo' alt='netflix logo' src='https://www.freepnglogos.com/uploads/netflix-logo-0.png' />
-      <img className='nav_avatar' alt='avatar' src='https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg' />  
+      <img className='nav_avatar' alt='avatar' src="/userprofile.png" />  
       
     </div>
   )

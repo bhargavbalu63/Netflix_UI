@@ -2,10 +2,8 @@
 {
     display: flex;
     position: fixed;
-    top: 10px;
     padding: 10px;
     width:100%;
-   
     justify-content: space-between;
     transition-timing-function: ease-in;
     transition: all 0.5s;
@@ -14,18 +12,31 @@
 
 .nav_logo
 {
-    top: 35px;
+    top: 25px;
     object-fit: contain;
-    width: 120px;
+    width: 140px;
     position: fixed;
     left: 20px;
 }
 
 .nav_avatar
 {
-    width: 60px;
+    top: 25px;
+    width: 30px;
     object-fit: contain;
     position: fixed;
     right:20px;
    
 }
+.nav_black
+{
+    margin-top: 0;
+    /* background-color: rgba(3, 3, 3, 0.749); */
+    /* background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.991), transparent); */
+      background-image: linear-gradient(to bottom,rgb(0, 0, 0),
+    rgb(0, 0, 0), transparent);
+
+
+    height: 15%;
+}
+

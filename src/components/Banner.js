@@ -73,7 +73,7 @@ const Banner = () => {
       </div>
 
    
-          <h1 className='banner_description'>{movie?.plot_overview}</h1>
+          <h2 className='banner_description'>{movie?.plot_overview}</h2>
 
 
     </div>
